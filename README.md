@@ -30,7 +30,7 @@ CaKy: This joins the year the car was manufactured with the name of the car to e
 # Problems the Dataset Intends to Solve
 This dataset is valuable and intends to solve various problems for the Car Dealership company, and potential buyers. Specifically, the dataset would solve the following;
 
-Market Analysis: Analyzing the trends and patterns in the used car market based on factors like car type, year, and price.
+Market Analysis: Analyzing the trends and patterns in the used car market based on factors like car type, year, and price
 Pricing Insights: Understanding the relationship between car specifications and pricing to assist in determining fair market value.
 Decision Making: Supporting decisions related to car purchases, investments, and market strategies.
 The data was scraped from the popular online platform cars24.com, ensuring a diverse range of car models and accurate pricing information. We can also see cars that have covered more distance over time.
