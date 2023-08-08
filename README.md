@@ -3,7 +3,7 @@
 # About Dataset
 The datasets provide detailed information about used cars, including their specifications and pricing details. The data was scraped from the popular online platform cars24.com, ensuring a diverse range of car models and accurate pricing information. The metadata dataset (Used_Cars) contains information about used cars in Sitka, Alaska owned by a Car Dealership company. The  meta dataset consists of approximately 1001 rows and 13 columns, covering various types of used cars (such as sedans, SUV) etc, The class of the cars (Small, Sporty, and Compact), and other information. Another table was manually created to support the numerical attributes of the cars from the metadata. The information includes RPG, Distance covered to date, etc. The variables included in the secondary table were initially in the parent table and had to be separated to show one table with the facts(measurable, quantitative data points or metrics that represent the events or transactions of interest) and another with the dimension (the characteristics or attributes that provide context to the facts). 
 
-# Metadaset
+# Meta dataset
 The Meta dataset includes the following columns:
 Car Id: The related identity number for each car for sale
 Car Name: The name or model of the car.
