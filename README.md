@@ -50,6 +50,7 @@ During import, MySQL was unable to load my dataset in the specified table. I not
  being in an XLSX format.
 
 - How the issue was resolved
+  
 Information from surfing the net helped me realize I needed to change the format the document. I further went on to re-save the document as a CSV (Comma Delimited) so as allow for a successful import.
 
 # Data Transformation
