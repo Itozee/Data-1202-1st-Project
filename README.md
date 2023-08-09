@@ -8,7 +8,7 @@ The Meta dataset includes the following columns:
 - Car Id: The related identity number for each car for sale
 - Car Name: The name or model of the car.
 - Year: The year when the car was Manufactured.
-Carkey: This joins the year the car was manufactured with the name of the car to ensure uniqueness in the dataset.
+- Carkey: This joins the year the car was manufactured with the name of the car to ensure uniqueness in the dataset.
 Fuel: The fuel used (petrol, diesel, CNG, etc.).
 Drive: The dataset refers to the type of transmission which could be Manual and Automatic
 Car Type: The type of car (sedan, SUV, hatchback, luxury SUV, luxury sedan).
