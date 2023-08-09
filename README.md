@@ -59,37 +59,47 @@ Information from surfing the net helped me realize I needed to change the format
 - Issues Faced
   
 - Wrong Values(1)
+  
 I performed some quality checks on the dataset by using the 'Distinct' function on the columns. I found that the 'Model' column in the Cars_Dim dataset had some wrong values in some of the rows.
 
 
 - How the issue was resolved
+  
 I used the 'update' function to actively change some of the values in the model column
 
 - Issues Faced
   
 - Wrong Datatype(2)
+  
 After performing a join linking the dimension and the fact tables together, I tried to do some aggregations on price but I noticed the price column had comma separated in each value indicating that the datatype was set at Text. We have to change the datatype to be able to perform data aggregations.   
 
 - How the issue was resolved
+  
 I started by removing all the commas in the Price column of the Cars_dim, then modified the datatype of the price column from TEXT TO INTEGER.
 
  # Operations Performed In the Transformations Phase
+ 
  - Join
+   
   I performed the join function to show additional information regarding the cars. This involved using a left join which is the dimensions table (Cars_dim) and fact table (Cars_fact).
 
 - GROUP BY
+  
   By looking at the joined table, we can answer so many questions and make decisions based on the current conditions of the car.
 
 - Customer
+  
   From the customer's perspective, when purchasing a car, he might pounder on what type of car to get buy at a range of amount in mind. 
   This leads to the question of what the average cost of each type of car is ?
   The question gives the buyer a lead into what type of cars he would be more interested in.
   A group by was done to give the customer this insight.
 
 - Operation performed
+  
   I did a group by on the 'Types' of cars and the average price of those cars in the group.
 
 - Output
+  
   The results from the operation show a potential customer that he would most likely find Lux_SUV cars to be more expensive, with an 
   average price of $1,349,818.
   A cheaper alternative, if he wants to look for pocket-friendly vehicles would be to go for Hatchbacks due to the category having an 
@@ -97,6 +107,7 @@ I started by removing all the commas in the Price column of the Cars_dim, then m
 
 
 - Magnum Motors
+  
    The car dealership companies will from time to time want to offer the best and most accommodating prices to the customers. One of the 
    best business strategy employed by vendors with depreciating assets or goods is to offer the assets that are not in demand or older 
    at a reduced price than what would have been charged.
@@ -104,11 +115,13 @@ I started by removing all the commas in the Price column of the Cars_dim, then m
    information to the sales team in the company to evaluate strategies that would get those cars bought.
 
   - Operation performed
+    
    I used the 'Where' function to filter out cars that have been used by 3 previous owners being the highest number of owners in the 
    dataset and filtered for 2010 manufacture date. I also use an 'Order by' function to allow us see the DESC (Descending) order in 
    terms of price. 
 
 - Output
+  
   The results from the operation shows 4 Hyundai i10 vehicles. The prices of the vehicles range from $170,000 to $287,000. 
 
 
