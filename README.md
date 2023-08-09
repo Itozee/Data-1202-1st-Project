@@ -46,11 +46,13 @@ The data extraction process involved my creating a schema on the MYSQL workbench
 -  Issues Faced
   
 - Import Wizard
-  During import, MySQL was unable to load my dataset in the specified table. I noticed this was due to the format of the Excel worksheet
+ 
+During import, MySQL was unable to load my dataset in the specified table. I noticed this was due to the format of the Excel worksheet
  being in an XLSX format.
 
 - How the issue was resolved
-  Surfing the net helped me realize I needed to change the format the document was in. I further went on to re-save the document as a CSV (Comma Delimited) so as allow for a successful import.
+  
+Information from surfing the net helped me realize I needed to change the format the document was in. I further went on to re-save the document as a CSV (Comma Delimited) so as allow for a successful import.
 
 # Data Transformation
  In this phase, I focus on the process of converting, cleaning, and structuring data from its raw format into a format that is suitable for analysis and storage in a data warehouse or database.
@@ -58,7 +60,8 @@ The data extraction process involved my creating a schema on the MYSQL workbench
 - Issues Faced
   
 - Datatype
-  After the table import stage, I observed the datatype for the Price column in the fact table (cars_fact) was in text format. I noticed this when executing a select statement as the column had commas (,) inbetweenn numbers
+  
+After the table import stage, I observed the datatype for the Price column in the fact table (cars_fact) was in text format. I noticed this when executing a select statement as the column had commas (,) inbetweenn numbers
 
 - How the issue was resolved
 
