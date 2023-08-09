@@ -1,5 +1,0 @@
-```
-SELECT DISTINCT YEAR
-FROM Cars_fact
-ORDER BY Year DESC;
-```
