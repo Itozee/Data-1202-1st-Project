@@ -52,13 +52,32 @@ During import, MySQL was unable to load my dataset in the specified table. I not
 
 - How the issue was resolved
   
-Information from surfing the net helped me realize I needed to change the format the document was in. I further went on to re-save the document as a CSV (Comma Delimited) so as allow for a successful import.
+Information from surfing the net helped me realize I needed to change the format the document. I further went on to re-save the document as a CSV (Comma Delimited) so as allow for a successful import.
 
 # Data Transformation
- In this phase, I focus on the process of converting, cleaning, and structuring data from its raw format into a format that is suitable for analysis and storage in a data warehouse or database.
+ In this phase, I focused on the process of converting, cleanin, and structuring data from its raw format into a format that is suitable for analysis and storage in a data warehouse or database.
 
 - Issues Faced
-  
+- Wrong Values(1)
+I performed some quality checks on the dataset by using the 'Distinct' function on the columns. I found that the 'Model' column in the Cars_Dim dataset had some wrong values in some of the rows.
+
+- How the issue was resolved
+I used the 'update' function to actively change some of the values in the model column
+
+- Issues Faced
+- Wrong Datatype(2)
+After performing a join linking the dimension and the fact tables together, I tried to do some aggregations on price but I noticed the price column had comma separated in each value indicating that the datatype was set at Text. We have to change the datatype to be able to perform data aggregations.   
+
+- How the issue was resolved
+I started by removing all the commas in the Price column of the Cars_dim, then modified the datatype of the price column from TEXT TO INTEGER.
+
+ # Operations Performed In the Transformations Phase
+ - Join
+  I performed the join function to show additional information regarding the cars. This involved using a left join which is the dimensions table (Cars_dim) and fact table (Cars_fact)
+
+- GROUP BY
+  There were so many   
+
 - Datatype
   
 After the table import stage, I observed the datatype for the Price column in the fact table (cars_fact) was in text format. I noticed this when executing a select statement as the column had commas (,) inbetweenn numbers
