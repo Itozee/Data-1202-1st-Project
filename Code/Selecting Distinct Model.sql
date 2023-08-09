@@ -1,0 +1,3 @@
+```
+SELECT DISTINCT MODEL FROM cars_dim;
+```
