@@ -91,20 +91,24 @@ After performing a join linking the dimension and the fact tables together, I tr
   
 I started by removing all the commas in the Price column of the Cars_dim, then modified the datatype of the price column from TEXT TO INTEGER.
 
- # Operations Performed In the Transformations Phase
- 
  - Join
    
   I performed the join function to show additional information regarding the cars. This involved using a left join which is the dimensions table (Cars_dim) and fact table (Cars_fact).
 
+- Data Loading
+Loading a cleaned and transformed dataset into a view in SQL offers several benefits. It helps provide a simplified and user-friendly way to access the data. It also helps when you need to perform similar complex transformations that you may have done before.
+I created a view of the joined tables and named the view 'Cars'. The view now represents a full dataset showing columns from Cars_dim and Cars_fact.
+
+- Questions Solved By The View 
+
 - GROUP BY
   
-  By looking at the joined table, we can answer so many questions and make decisions based on the current conditions of the car.
+  By looking at the view (Cars), we can answer so many questions and make decisions based on the current conditions of the car.
 
 - Customer
   
   From the customer's perspective, when purchasing a car, he might ponder on what type of car to buy at a range of amount in mind. 
-  This leads to the question of what the average cost of each type of car is ?
+  This leads to the question of what the average cost of each type of car is?
   The question gives the buyer a lead into what type of cars he would be more interested in.
   A group by was done to give the customer this insight.
 
@@ -123,23 +127,22 @@ I started by removing all the commas in the Price column of the Cars_dim, then m
 - Magnum Motors
   
    The car dealership companies will from time to time want to offer the best and most accommodating prices to the customers. One of the 
-   best business strategy employed by vendors with depreciating assets or goods is to offer the assets that are not in demand or older 
+   best business strategy employed by vendors with depreciating assets or goods is to offer the assets that are not in demand 
    at a reduced price than what would have been charged.
-   From the dataset, we can filter out the cars with the longest manufactured year and the most owners. This can help provide 
+   From the dataset, we can filter out the cars with the least manufactured year and the most owners. This can help provide 
    information to the sales team in the company to evaluate strategies that would get those cars bought.
 
   - Operation performed
     
    I used the 'Where' function to filter out cars that have been used by 3 previous owners being the highest number of owners in the 
-   dataset and filtered for 2010 manufacture date. I also use an 'Order by' function to allow us see the DESC (Descending) order in 
+   dataset and filtered for 2010 manufacture date. I also used an 'Order by' function to allow us to see the DESC (Descending) order in 
    terms of price. 
 
 - Output
   
   The results from the operation shows 4 Hyundai i10 vehicles. The prices of the vehicles range from $170,000 to $287,000.
 
-- Data Loading
-Loading a cleaned and transformed dataset into a view in SQL offers several benefits. It helps provide a simplified and user-friendly way to access the data. It also helps when you need to perform similar complex transformations that you may have done before.
+
 
 
 
