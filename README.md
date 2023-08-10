@@ -144,7 +144,8 @@ I created a view of the joined tables and named the view 'Cars'. The view now re
   The results from the operation shows 4 Hyundai i10 vehicles. The prices of the vehicles range from $170,000 to $287,000.
 
 
-
+- Reflection
+  Th
 
 
 
