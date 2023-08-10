@@ -145,7 +145,14 @@ I created a view of the joined tables and named the view 'Cars'. The view now re
 
 
 - Reflection
-  Th
+  
+  The ETL process is very useful as it captures historical data over time. I enjoyed the transformation phase because it enriches the 
+  dataset with additional information needed to generate valuable business insights and reports.
+  The part of this ETL process I found most challenging was changing the price column from Text to integer because I did not realize I 
+  extracted my data with the wrong datatype. I could have used power query on Excel to clean some parts of the dataset as well
+  
+  Generally, this project was a success, and the insights gathered will support Magnum Motors in operating efficiently.    
+  
 
 
 
