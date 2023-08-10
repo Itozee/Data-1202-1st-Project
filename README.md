@@ -68,7 +68,7 @@ During import, MySQL was unable to load my dataset in the specified table. I not
 Information from surfing the net helped me realize I needed to change the format the document. I further went on to re-save the document as a CSV (Comma Delimited) so as allow for a successful import.
 
 # Data Transformation
- In this phase, I focused on the process of converting, cleanin, and structuring data from its raw format into a format that is suitable for analysis and storage in a data warehouse or database.
+ In this phase, I focused on the process of converting, cleaning, and structuring data from its raw format into a format that is suitable for analysis and storage in a data warehouse or database.
 
 - Issues Faced
   
@@ -103,7 +103,7 @@ I started by removing all the commas in the Price column of the Cars_dim, then m
 
 - Customer
   
-  From the customer's perspective, when purchasing a car, he might pounder on what type of car to get buy at a range of amount in mind. 
+  From the customer's perspective, when purchasing a car, he might ponder on what type of car to buy at a range of amount in mind. 
   This leads to the question of what the average cost of each type of car is ?
   The question gives the buyer a lead into what type of cars he would be more interested in.
   A group by was done to give the customer this insight.
