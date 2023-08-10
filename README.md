@@ -96,6 +96,7 @@ I started by removing all the commas in the Price column of the Cars_dim, then m
   I performed the join function to show additional information regarding the cars. This involved using a left join which is the dimensions table (Cars_dim) and fact table (Cars_fact).
 
 - Data Loading
+  
 Loading a cleaned and transformed dataset into a view in SQL offers several benefits. It helps provide a simplified and user-friendly way to access the data. It also helps when you need to perform similar complex transformations that you may have done before.
 I created a view of the joined tables and named the view 'Cars'. The view now represents a full dataset showing columns from Cars_dim and Cars_fact.
 
