@@ -1,7 +1,21 @@
 # Data Archive For Used Cars Dataset (2023) For Magnum Motors, Alaska
 
+# Introduction
+This project aims to analyze two datasets through the data pipeline process used in data management and data warehousing where data is extracted from various sources, transformed to fit the desired format and structure, and then loaded into a destination, often a data warehouse or database. The data pipeline process involves three phases namely Extraction, Transformation and Loading (ETL). The ETL process is a critical step in preparing and integrating data for analysis, reporting, and business intelligence.
+
+I have created 3 folders to help any reader or developer with the resources they need to understand and work with what was done effectively. The 3 folders include;
+
+- Code File: You will find my SQL syntax in this folder. Comments(--) at the top of each group of syntax gives added clarity to what was done.
+- Snapshot: The Snapshot folder documents the pictures of my dataset after the initial Extract into SQL and the pictures after loading into a view.  
+- Readme: The Readme provides important information and context about the project to anyone who visits the repository.
+
+  
 # About Dataset
+
 The datasets provide detailed information about used cars, including their specifications and pricing details. The data was scraped from the popular online platform cars24.com, ensuring a diverse range of car models and accurate pricing information. The metadata dataset (Used_Cars) contains information about used cars in Sitka, Alaska owned by a Car Dealership company. The  meta dataset consists of approximately 1001 rows and 13 columns, covering various types of used cars (such as sedans, SUV) etc, The class of the cars (Small, Sporty, and Compact), and other information. 
+
+- Data Source
+https://www.kaggle.com/datasets/ujjwalwadhwa/cars24com-used-cars-dataset
 
 # Problems the Dataset Intends to Solve
 This dataset is valuable and intends to solve various problems for the Car Dealership company, and potential buyers. Specifically, the dataset would solve the following;
@@ -122,7 +136,10 @@ I started by removing all the commas in the Price column of the Cars_dim, then m
 
 - Output
   
-  The results from the operation shows 4 Hyundai i10 vehicles. The prices of the vehicles range from $170,000 to $287,000. 
+  The results from the operation shows 4 Hyundai i10 vehicles. The prices of the vehicles range from $170,000 to $287,000.
+
+- Data Loading
+Loading a cleaned and transformed dataset into a view in SQL offers several benefits. It helps provide a simplified and user-friendly way to access the data. It also helps when you need to perform similar complex transformations that you may have done before.
 
 
 
