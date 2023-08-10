@@ -144,7 +144,7 @@ I created a view of the joined tables and named the view 'Cars'. The view now re
   The results from the operation shows 4 Hyundai i10 vehicles. The prices of the vehicles range from $170,000 to $287,000.
 
 
-- Reflection
+  # Reflection
   
   The ETL process is very useful as it captures historical data over time. I enjoyed the transformation phase because it enriches the 
   dataset with additional information needed to generate valuable business insights and reports.
